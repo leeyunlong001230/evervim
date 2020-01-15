@@ -13,7 +13,7 @@ function! evervim#logincheck() " {{{
     try
     python3 << EOF
 try:
-    evervimmer.getInstance().auth()
+    Evervimmer.getInstance().auth()
     print 'login successful.'
 except:
     raise StandardError("login error")
