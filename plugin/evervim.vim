@@ -5,9 +5,9 @@
 " License: MIT
 "
 "scriptencoding utf-8
-if !has('python')
+if !has('python3')
     " TODO more suitable message.
-    echo "Need python. evervim finished."
+    echo "Need python3. evervim finished."
     finish
 endif
 "
@@ -89,7 +89,7 @@ endfunction
 
 function! s:setup() " {{{
     try
-        python import markdown
+        python3 import markdown
     catch
         echoerr ' *** import markdown error !!!!! you must markdown library. see :help evervim. *** '
         finish
